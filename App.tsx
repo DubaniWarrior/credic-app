@@ -33,7 +33,7 @@ import SignIn from "./src/screens/SignInScreen";
 import ResetPassword from "./src/screens/ResetPassword";
 import NewPassword from "./src/screens/NewPassword";
 import SendOTP from "./src/screens/SendOTP";
-import FastDelivery  from "./src/screens/FastDelivery";
+import FastDelivery from "./src/screens/FastDelivery";
 import FindFood from "./src/screens/FindFood";
 
 const Stack = createNativeStackNavigator();
@@ -67,7 +67,7 @@ const App = () => {
           <Stack.Screen
             name="Home"
             component={HomeScreen}
-            // options={{ headerShown: false }}
+            options={{ headerShown: false }}
           />
           <Stack.Screen
             name="SignIn"
@@ -79,12 +79,12 @@ const App = () => {
             component={ResetPassword}
             options={{ headerShown: false }}
           />
-           <Stack.Screen
+          <Stack.Screen
             name="NewPassword"
             component={NewPassword}
             options={{ headerShown: false }}
           />
-           <Stack.Screen
+          <Stack.Screen
             name="SendOTP"
             component={SendOTP}
             options={{ headerShown: false }}
@@ -100,7 +100,6 @@ const App = () => {
             options={{ headerShown: false }}
           />
         </Stack.Navigator>
-        
       </NativeBaseProvider>
     </NavigationContainer>
   );
